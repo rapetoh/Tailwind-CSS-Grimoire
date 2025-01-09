@@ -1,8 +1,14 @@
-# React + Vite
+TAILWIND CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Here we are going to see really thoroughly, each core elements you should know from the begining, to be able to understand and code with TailwindCSS.
 
-Currently, two official plugins are available:
+Feel free to go through the ROADMAP file i created, to see a logic flow of how you could proceed from scratch.
+But first, let's answer one big question
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Q: How would i describe Tailwind CSS ?
+A: Well, Tailwind CSS is a utility-first framework that lets you style your website directly in HTML using pre-defined, reusable classes. Utility-first because it mainly provides CSS utilities classes that are re-used at our conveniences. It is a Framework because it provides pre-made solutions that we are using the HTML tags.
+
+
+*** TO KEEP IN MIND OVERALL ***
+=> TailwindCSS is simply a framework that will help you stylize easier your webpages. It will provide you, css classes that you will add in your HTML tags to get things beautiful faster than with CSS usual code, because here you are adding properties directly inside your HTML tag and in a simpler way.
+- However there are some configurations required to start and you can find them in ROADMAP file. That is your NEXT STEP.

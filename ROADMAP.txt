@@ -1,0 +1,61 @@
+ *************  INSTALLATION (we will use tailwind in a React app created with Vite) *************
+(BIG DISCLAIMER. IT IS ALWAYS BETTER TO FOLLOW the steps on the OFFICIAL website designed for starting a tailwind app with Vite and React, because updates may happen. Anyway i'm currently stealing their job haha.)
+
+
+1 - Let create our React project first: 
+        npm create vite@latest myTailwindAppName -- --template react 
+2 - cd AppFolder
+3 - npm install (to install all the necessary package specified in the package.json file for our React App).
+
+4 - Now we will install tailwind package as development tool ( -D. That means that it will not be runned in production mode because it is not necessary and all the codes we are writing in tailwind are actually converted in CSS. As simple as that)
+    npm install -D tailwindcss postcss autoprefixer 
+        (postcss to enable injection of @tailwind base; ... inside our css files. autoprefixer for browser compatibility purposes) 
+
+5 - npx tailwindcss init -p
+        (to create tailwind.config.js and postccs.config.js file. They are important files for our future configurations).
+        - p important to: 
+
+6 - Now let's modify the content of some files:
+
+    a - tailwind.config.js (look for the modification on the officail website.) 
+        content -> Specifies the files Tailwind should scan to find class names (e.g., ./src/**/*.{js,jsx}) for purging unused styles in production.
+        theme.extend -> Allows you to customize or extend the default Tailwind styles (e.g., adding new colors, spacing, or fonts).
+        plugin -> Allows you to add custom Tailwind plugins or community plugins to enhance functionality (e.g., forms, typography).
+
+    b - To my main css file "index.css" 
+        @tailwind base; -> Includes Tailwind's base styles (like resets and defaults) to ensure consistent styling across browsers.
+        @tailwind components; -> Includes reusable pre-designed component classes (e.g., buttons, forms) provided by Tailwind.
+        @tailwind utilities; -> Includes all utility classes (e.g., text-center, bg-blue-500) for applying styles directly in HTML.
+
+
+
+
+
+
+
+*************  START STYLING *************
+
+Here are a list of my basics and most used CSS properties with their equivalent in Tailwindcss.
+You can try to know this and the rest will certainly come intuitively.
+No need memorize exactly everything. Just with few practices, it will become natural.
+
+color: blue;  <==> 	text-blue-500
+background-color: blue;	 <==>  bg-blue-500
+text-align: center;  <==>	text-center
+font-size: 18px;    <==>	text-[18px] (or the closest like text-lg, text-base, etc.)
+border: 3px solid blue;   <==>	border-3 border-solid border-blue-500
+border-radius: 50%;	 <==>  rounded-full
+margin: 14px;  <==> 	m-[14px]
+margin-top: 4px;    <==>	mt-[4px]
+padding: 14px;   <==>	p-[14px]
+font-weight: bold;   <==> 	font-bold
+font-style: italic;	   <==>    italic
+font-family: Arial, sans-serif;   <==> 	 font-[Arial, sans-serif] (you’ll need custom fonts if not in Tailwind defaults)
+box-shadow: 15px 5px 10px 5px;    <==>   shadow-[15px_5px_10px_5px] (custom shadow value using arbitrary syntax)
+display: flex;	 <==>     flex
+flex-direction: column;	  <==>   flex-col
+justify-content: center;   <==> 	justify-center
+align-items: center;   <==>  	items-center
+.example:hover { background-color: red; }   <==> 	hover:bg-red-500
+
+
