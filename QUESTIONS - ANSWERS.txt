@@ -1,0 +1,7 @@
+Q: Where is that output file we are talking about ? I'm already seeing the efffect of tailwind applied on my webpage but i don't where is that output file we are talking about...
+A: The output file is generated when you run "npm build". When you're still in dev environment, and running npm run dev, Vite or your environment is still working in development so styles application are directly injected into the browser.
+
+Q: In the tailwindcss.config.js, what is the difference between elements added, in the theme section simply, and in the theme.extend section ?
+A: In Tailwind CSS, the `theme` object is used to --! define/set !-- the default values for Tailwind already existing styles. When you define values directly in theme, you are setting the base values that Tailwind will use. If you define a key in theme, it will completely replace the default values for that key.
+   In contrast, the extend section is used to --! add to !-- the existing default values provided by Tailwind. This is useful when you want to add custom values without losing the default ones.
+

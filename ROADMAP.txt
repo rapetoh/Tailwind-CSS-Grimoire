@@ -1,5 +1,5 @@
- *************  INSTALLATION (we will use tailwind in a React app created with Vite) *************
-(BIG DISCLAIMER. IT IS ALWAYS BETTER TO FOLLOW the steps on the OFFICIAL website designed for starting a tailwind app with Vite and React, because updates may happen. Anyway i'm currently stealing their job haha.)
+ ************* 🛠️🛠️🛠️ INSTALLATION 🛠️🛠️🛠️ (we will use tailwind in a React app created with Vite) *************
+(BIG DISCLAIMER. IT IS ALWAYS BETTER TO FOLLOW the steps on the OFFICIAL website designed for starting a tailwind app with Vite and React, because updates may occur. Anyway i'm currently stealing their job haha.)
 
 
 1 - Let create our React project first: 
@@ -12,8 +12,8 @@
         (postcss to enable injection of @tailwind base; ... inside our css files. autoprefixer for browser compatibility purposes) 
 
 5 - npx tailwindcss init -p
-        (to create tailwind.config.js and postccs.config.js file. They are important files for our future configurations).
-        - p important to: 
+        (to create tailwind.config.js and postcss.config.js file. They are important files for our future configurations).
+        - p important to: also create the postcssconfig.js 
 
 6 - Now let's modify the content of some files:
 
@@ -27,13 +27,14 @@
         @tailwind components; -> Includes reusable pre-designed component classes (e.g., buttons, forms) provided by Tailwind.
         @tailwind utilities; -> Includes all utility classes (e.g., text-center, bg-blue-500) for applying styles directly in HTML.
 
+!!!!!!    NOTE: If you go to -- https://tailwindcss.com/docs/guides/vite#react --, you will see a page containing all of what you want, from the installation step to the very specific features of tailwaind you want to use.    !!!!!
 
 
 
 
 
 
-*************  START STYLING *************
+******************** ✒️✒️✒️ START STYLING ✒️✒️✒️ *************************
 
 Here are a list of my basics and most used CSS properties with their equivalent in Tailwindcss.
 You can try to know this and the rest will certainly come intuitively.
@@ -57,5 +58,68 @@ flex-direction: column;	  <==>   flex-col
 justify-content: center;   <==> 	justify-center
 align-items: center;   <==>  	items-center
 .example:hover { background-color: red; }   <==> 	hover:bg-red-500
+
+
+
+
+
+
+
+****************** 📈✒️📈 LET'S TAKE STYLING TO A NEXT LEVEL WITH CUSTOMIZATION 📈✒️📈 *************
+
+****  🗂️ WITH LAYERS 🗂️ ****
+We can take styling in tailwindcss to a next level using layers in our main css file (where we've added @tailwind base....)
+It actually helps to gather specific css styles we have in mind, to a one class that we can now repeat in our html files.
+Layer is a way to create new classes that can be add in the html file with class="" or className="" in React.
+Now, that class can be part of either the base, the component, or the utilities of tailwaind. (Remember when we were adding @tailwind base....)
+
+How all of that works ?
+You write this:
+@layer base {}. In the curly braces will stay the custom classes you're adding and want to be added to the "base in Tailwind". Same for components & utilities
+{
+    .custom-class {
+        background-color: blue;
+        border-radius: 10px;
+    }
+}
+Above is your custom class for instance. There is a second form:
+{
+    .custom-class {
+        @apply background-blue-500 border-2 border-solid rounded-lg;
+    }
+}
+That is When you want to combine multiple Tailwind utility classes into a single custom class.
+So don't usse @apply when you are defining custom styles that are not based on Tailwind's utility classes.
+Now, you can use your custom class in your html file by just calling them into the class="".
+
+*** 🔧 TAILWIND CONFIG JS 🔧 ***
+You can also add custom classes in the tailwind.config.js file. 
+Refer to the INSTALLATION part to see what each section can contain.
+Refer to QUESTIONS - ANSWERS file if you have any question to deepen your understanding.
+
+
+*** 📱💻 RESPONSIVE DESIGN 📱💻 ***
+It is easier to implement Responsive design with Tailwind. First thing to know is:
+
+1- Breakpoints  
+    a- "sm": 640-768px for the screen width (tablets,...)
+    b- "md": 768-1024px (small laptops)
+    c- "lg": 1024-1280px (desktops, large devices)
+    d- "xl": 1280-1536px (wide desktops, extra-large devices)
+    e- "2xl"
+    f- "3xl"
+
+2- Example/logic of use
+    <div class="text-base sm:text-sm md:text-md lg:text-lg">
+        Responsive Text
+    </div>
+
+    By default we have a text-sm size.
+    When the screen width is between 640-768px (sm), the text will be of size sm
+    When the screen width is between 768-1024px (md), the text will be of size md
+    When the screen width is between 1024-1280px (lg), the text will be of size lg
+
+    This is pretty good logic for a body or paragraph styling. But maybe for Heading or title, you should take for each screen Breakpoints, a one time upper size for the text(md screen => lg text).
+
 
 
