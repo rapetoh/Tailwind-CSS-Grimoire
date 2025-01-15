@@ -1,6 +1,6 @@
 ✒️✒️✒️  TAILWIND CSS  ✒️✒️✒️
 
-I have built a landing page using Tailwind to implement the concepts i will follow up on soon. You can go live to see what it seems like to build a stunning website with TailwindCSS.
+I have built using Tailwind, a showcase page for a shoe store to implement the concepts I'll cover next. Feel free to go live and see what it seems like to build a stunning website with TailwindCSS.
 
 We are going to see, each core elements you should know from the begining, to be able to understand and code with TailwindCSS.
 
