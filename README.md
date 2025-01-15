@@ -13,5 +13,5 @@ A: Well, Tailwind CSS is a utility-first framework that lets you style your webs
 
 *** 💡💡💡 TO KEEP IN MIND OVERALL 💡💡💡 ***
 
-TailwindCSS is simply a framework that will help you stylize easier your webpages. It will provide you, css classes that you will add in your HTML tags to get things beautiful faster than with CSS usual code, because here you are adding properties directly inside your HTML tag and in a simpler way.
+TailwindCSS is simply a framework that will help you style your web pages more easily. It will provide you with CSS classes that you will add in your HTML tags to get beautiful effects faster than with the usual CSS code, because here you add properties directly inside your HTML tag and in a simpler way. Just give it a try and you will see how cool it can be.
 - Here is your NEXT STEP. https://github.com/rapetoh/Tailwind-CSS-Grimoire/blob/main/ROADMAP.txt
