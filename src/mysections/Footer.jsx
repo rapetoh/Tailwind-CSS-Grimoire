@@ -17,13 +17,13 @@ const Footer = () => {
           </p>
           <div className="flex items-center gap-5 mt-8">
             <div className="flex justify-center items-center w-12 h-12 bg-white rounded-full">
-              <img src={facebook} width={24} height={24} />
+              <a href="https://www.facebook.com/nike"><img src={facebook} width={24} height={24} /></a>
             </div>
             <div className="flex justify-center items-center w-12 h-12 bg-white rounded-full">
-              <img src={twitter} width={24} height={24} />
+              <a href="https://x.com/Nike?mx=2"><img src={twitter} width={24} height={24} /></a>
             </div>
             <div className="flex justify-center items-center w-12 h-12 bg-white rounded-full">
-              <img src={instagram} width={24} height={24} />
+              <a href="https://www.instagram.com/nike/"><img src={instagram} width={24} height={24} /></a>
             </div>
           </div>
         </div>
@@ -87,7 +87,7 @@ const Footer = () => {
           <img src={copyrightSign} alt="copy right sign" width={20} height={20} className="rounded-full m-0" />
           <p>Copyright. All rights reserved.</p>
         </div>
-        <p className="font-montserrat cursor-pointer">Terms & Conditions</p>
+        <p className="font-montserrat cursor-pointer">Made By Roch APETOH D.</p>
       </div>
     </footer>
   )

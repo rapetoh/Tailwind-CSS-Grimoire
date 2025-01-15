@@ -9,7 +9,7 @@ const Product = () => {
     <div className="flex flex-col gap-10 my-5">
       <div className="flex flex-col justify-start items-start">
         <h1 className="text-4xl max-sm:text-3xl font-bold font-montserrat mb-2">
-          Our <span className="text-coral-red">Popular</span> Products
+          Our <span className="text-purple">Popular</span> Products
         </h1>
         <p className="max:sm:text-base max-sm:w-4/5 max-lg:w-4/5 w-2/5 text-slate-600 font-montserrat">Experience top-notch quality and style with our sought-after selections. Discover a world of comfort, design, and value.</p>
       </div>

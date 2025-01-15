@@ -4,19 +4,22 @@ import { bigShoe1 } from "../assets/images"
 import { bigShoe2 } from "../assets/images"
 import { bigShoe3 } from "../assets/images"
 import HeroCard from "../myComponents/HeroCard"
+import { toast } from "react-toastify"
 
 
 const Hero = () => {
 
+  
+
   return (
-    <div id="home" className="flex xl:padding-x xl:flex-row flex-col justify-center min-h-screen gap-10 border-8 border-red-200 rounded-3xl">
+    <div id="home" className="flex xl:padding-x xl:flex-row flex-col justify-center min-h-screen gap-10 border-8 border-[#9370DB] rounded-3xl">
       <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28">
-        <p className=" text-xl text-coral-red">Our Summer Collection</p>
+        <p className=" text-xl text-purple">Our Summer Collection</p>
         <h1 className="text-8xl font-bold my-10 max-sm:text-4xl max-sm:text-wrap">
           <span className=" bg-white pr-10 z-10 no-text-nowrap rounded-full max-sm:text-wrap">
             The&nbsp;New&nbsp;Arrival
           </span><br />
-          <span className="text-coral-red">
+          <span className="text-purple">
             Nike&nbsp;
           </span>
           Shoes

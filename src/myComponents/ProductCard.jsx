@@ -9,7 +9,7 @@ const ProductCard = (props) => {
         </div>
         <span className="flex flex-row"><img src={star} alt="" />&nbsp;{props.productRate}</span>
         <p className="font-bold font-montserrat text-center">{props.productName}</p>
-        <p className="text-coral-red text-2xl font-bold font-montserrat">{props.productPrice}</p>
+        <p className="text-purple text-2xl font-bold font-montserrat">{props.productPrice}</p>
     </div>
   )
 }

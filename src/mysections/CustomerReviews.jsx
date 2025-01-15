@@ -6,7 +6,7 @@ function CustomerReviews() {
     return (
         <div className="flex flex-col items-center gap-14">
             <div className="flex flex-col justify-center items-center w-3/5">
-                <h1 className="text-4xl max-lg:text-3xl font-montserrat font-bold text-center">What Our <span className="text-coral-red">Customer</span> Say?</h1>
+                <h1 className="text-4xl max-lg:text-3xl font-montserrat font-bold text-center">What Our <span className="text-purple">Customer</span> Say?</h1>
                 <p className="font-montserrat text-slate-400 w-3/5 max-lg:w-4/5 text-center">Hear genuine stories from our satisfied customers about their exceptional experiences with us.</p>
             </div>
             <div className="flex flex-row max-lg:flex-col gap-14 justify-center items-center">

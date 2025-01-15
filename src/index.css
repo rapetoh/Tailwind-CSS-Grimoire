@@ -5,6 +5,36 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.my-toast-container {
+  padding: 16px; /* Add padding */
+  font-family: 'Arial', sans-serif; /* Change font */
+  border-radius: 12px; /* Make borders more rounded */
+}
+
+/* Customize the toast body (message area) */
+.my-toast-body {
+  padding: 12px;
+  font-size: 16px;
+  color: #333; /* Text color */
+}
+
+/* Customize the scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: purple; /* Purple scrollbar thumb */
+  border-radius: 25px; /* Rounded corners */
+}
+
+::-webkit-scrollbar-track {
+  background-color: white; /* White background for the track */
+  border-radius: 8px; /* Rounded corners */
+}
+
+
 * {
   margin: 0;
   padding: 0;

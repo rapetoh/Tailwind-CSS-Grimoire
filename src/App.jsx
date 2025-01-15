@@ -25,16 +25,16 @@ function App() {
       <section className="padding-x py-10">
         <Services></Services>
       </section>
-      <section className="padding">
+      <section id="specialOffer" className="padding">
         <SpecialOffer></SpecialOffer>
       </section>
-      <section className="bg-pale-blue padding">
+      <section id="aboutUs" className="bg-pale-blue padding">
         <CustomerReviews></CustomerReviews>
       </section>
       <section className="padding-x sm:py-32 py-16 w-full">
         <Subscribe></Subscribe>
       </section>
-      <section className="bg-black padding-x padding-t pb-8">
+      <section id="contact" className="bg-black padding-x padding-t pb-8">
         <Footer></Footer>
       </section>
     </main>
