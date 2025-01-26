@@ -17,7 +17,7 @@ export default {
       '8xl': ['96px', '106px'],
     },
     // colors: {
-    //   blue: "#FF6452",
+    //   blue: "#18181B",
     // },
     
     extend: {
